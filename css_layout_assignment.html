@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: black;
+            height: 100vh;
+
+        }
+
+        header {
+            background-color: cadetblue;
+            height: 20%;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        main {
+            height: 60%;
+            /* background-color: aquamarine; */
+            display: flex;
+        }
+
+        .left-box {
+            width: 20%;
+            margin: 10px;
+            background-color: darkblue;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .new {
+            text-align: center;
+            font-size: 30px;
+            background-color: crimson;
+            width: 50%;
+            height: 80px;
+            border: 1px solid green;
+        }
+
+        .right-box {
+            margin: 10px;
+            border: 1px solid red;
+            width: 80%;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .box {
+            height: 200px;
+            width: 20%;
+            background-color: rgb(212, 125, 252);
+            margin: 10px;
+            border: 2px solid saddlebrown;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        footer {
+            height: 20%;
+            background-color: chocolate;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer{
+            width: 40%;
+            height: 80%;
+            background-color: mediumseagreen;
+            border: 1px solid blue;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            Header
+        </header>
+        <main>
+            <div class="left-box">
+                <div class="new">A</div>
+                <div class="new">B</div>
+                <div class="new">C</div>
+            </div>
+
+
+            <div class="right-box">
+                <div class="box">Box1</div>
+                <div class="box">Box2</div>
+                <div class="box">Box3</div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">Footer1</div>
+            <div class="footer">Footer2</div>
+        </footer>
+    </div>
+</body>
+
+</html>
